@@ -1,0 +1,37 @@
+@use 'mixins';
+@use 'fonts';
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 44px;
+
+    &__logo {
+        cursor: pointer;
+
+        transition: transform 200ms linear;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__menu-bar {
+        @include mixins.Jost-Regular-20;
+        color: var(--color-primary-2);
+        display: flex;
+        gap: 25px;
+    }
+
+    &__link {
+        text-decoration: none;
+        cursor: pointer;
+
+        color: var(--color-primary-2);
+        transition: color 200ms linear;
+        &:hover {
+            color: var(--color-primary-1);
+        }
+    }
+}

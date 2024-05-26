@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM";
+  src: url("../fonts/DMSerifDisplay.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 44px;
+}
+.header__logo {
+  cursor: pointer;
+  transition: transform 200ms linear;
+}
+.header__logo:hover {
+  transform: scale(1.1);
+}
+.header__menu-bar {
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 125%;
+  color: var(--color-primary-2);
+  display: flex;
+  gap: 25px;
+}
+.header__link {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--color-primary-2);
+  transition: color 200ms linear;
+}
+.header__link:hover {
+  color: var(--color-primary-1);
+}
+
+.banner {
+  margin-top: 57px;
+  margin-bottom: 96px;
+}
+.banner__image-container {
+  position: relative;
+}
+.banner__image-container img {
+  border-radius: 70px;
+  overflow: hidden;
+  height: 100%;
+  object-fit: contain;
+}
+.banner__intro {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 433px;
+  top: 208px;
+  left: 52px;
+}
+.banner__title {
+  font-family: "DM", sans-serif;
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 125%;
+  color: var(--color-primary-2);
+}
+.banner__text {
+  margin-block: 18px 21px;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-primary-5);
+}
+.banner__start-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-primary-4);
+  border-radius: 18px;
+  border: var(--color-primary-2);
+  padding: 26px 49px 26px 48px;
+  background-color: var(--color-primary-2);
+  transition: background-color 200ms linear, border 200ms linear;
+}
+.banner__start-btn:hover {
+  border: var(--color-primary-1);
+  background-color: var(--color-primary-1);
+}
+.banner__start-btn:hover svg {
+  color: var(--color-primary-2);
+}
+.banner__start-btn svg {
+  color: var(--color-primary-1);
+  transition: color 200ms linear;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project__heading {
+  max-width: 737px;
+  text-align: center;
+}
+.project__title {
+  font-family: "DM", sans-serif;
+  font-size: 50px;
+  line-height: 125%;
+  color: var(--color-primary-2);
+}
+.project__subtitle {
+  margin-block: 8px 93px;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-primary-5);
+}
+.project__decor-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 56px;
+  flex-wrap: wrap;
+}
+.project__decor-card img {
+  width: 524px;
+  height: 548px;
+}
+.project__decor-subcard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project__decor-name {
+  margin-block: 28px 4px;
+  font-family: "DM", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 125%;
+  color: var(--color-primary-2);
+}
+.project__decor-place {
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-primary-5);
+}
+.project__decor-btn {
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: var(--color-primary-3);
+  background-color: var(--color-primary-3);
+  transition: background-color 200ms linear, border 200ms linear;
+}
+.project__decor-btn:hover {
+  background-color: var(--color-primary-1);
+  border: var(--color-primary-1);
+}
+
+:root {
+  --color-primary-1: #CDA274;
+  --color-primary-2: #292F36;
+  --color-primary-3: #F4F0EC;
+  --color-primary-4: #fff;
+  --color-primary-5:#4D5053;
+  --container-width: 1140px;
+  --container-gap: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-gap) + var(--container-gap));
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

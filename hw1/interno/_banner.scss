@@ -1,0 +1,74 @@
+@use 'mixins';
+@use 'fonts';
+
+.banner {
+    margin-top: 57px;
+    margin-bottom: 96px;
+
+    &__image-container {
+        position: relative;
+
+        img {
+            border-radius: 70px;
+            overflow: hidden;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__intro {
+        position: absolute;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        width: 433px;
+
+        top: 208px;
+        left: 52px;
+    }
+
+    &__title {
+        @include mixins.DM-Regular-65;
+        color: var(--color-primary-2);
+    }
+
+    &__text {
+        margin-block: 18px 21px;
+        @include mixins.Jost-Regular-22;
+        color: var(--color-primary-5);
+    }
+
+    &__start-btn {
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        @include mixins.Jost-Regular-18;
+        color: var(--color-primary-4);
+
+        border-radius: 18px;
+        border: var(--color-primary-2);
+        padding: 26px 49px 26px 48px;
+        background-color: var(--color-primary-2);
+
+        transition: background-color 200ms linear, border 200ms linear;
+
+        &:hover {
+            border: var(--color-primary-1);
+            background-color: var(--color-primary-1);
+        }
+        &:hover svg {
+            color: var(--color-primary-2);
+        }
+    }
+    &__start-btn svg {
+        color: var(--color-primary-1);
+        transition: color 200ms linear;
+      }
+
+}
