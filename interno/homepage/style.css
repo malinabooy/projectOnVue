@@ -1,3 +1,26 @@
+:root {
+  --color-primary-1: #CDA274;
+  --color-primary-2: #292F36;
+  --color-primary-3: #F4F0EC;
+  --color-primary-4: #fff;
+  --color-primary-5:#4D5053;
+  --container-width: 1140px;
+  --container-gap: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-gap) + var(--container-gap));
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 .logo img {
   height: 50px;
   cursor: pointer;
@@ -354,27 +377,4 @@
   margin-top: 31px;
   display: flex;
   gap: 64px;
-}
-
-:root {
-  --color-primary-1: #CDA274;
-  --color-primary-2: #292F36;
-  --color-primary-3: #F4F0EC;
-  --color-primary-4: #fff;
-  --color-primary-5:#4D5053;
-  --container-width: 1140px;
-  --container-gap: 30px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-
-.container {
-  max-width: calc(var(--container-width) + var(--container-gap) + var(--container-gap));
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
 }/*# sourceMappingURL=style.css.map */
