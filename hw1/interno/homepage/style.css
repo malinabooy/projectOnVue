@@ -1,3 +1,12 @@
+.logo img {
+  height: 50px;
+  cursor: pointer;
+  transition: transform 200ms linear;
+}
+.logo img:hover {
+  transform: scale(1.1);
+}
+
 @font-face {
   font-family: "Jost";
   src: url("../fonts/Jost.woff2") format("woff2");
@@ -17,13 +26,6 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 44px;
-}
-.header__logo {
-  cursor: pointer;
-  transition: transform 200ms linear;
-}
-.header__logo:hover {
-  transform: scale(1.1);
 }
 .header__menu-bar {
   font-family: "Jost", sans-serif;
@@ -114,6 +116,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 96px;
 }
 .project__heading {
   max-width: 737px;
@@ -180,6 +183,178 @@
   background-color: var(--color-primary-1);
   border: var(--color-primary-1);
 }
+.project__decor-btn:hover svg {
+  color: var(--color-primary-4);
+}
+.project__decor-btn svg {
+  color: var(--color-primary-2);
+  transition: color 200ms linear;
+}
+
+.counter {
+  background-color: var(--color-primary-3);
+}
+.counter__blocks {
+  padding: 151px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.counter__block {
+  border-right: 1px solid #CDA274;
+  text-align: center;
+}
+.counter__block:nth-child(4) {
+  border-right: none;
+}
+.counter__number {
+  font-family: "DM", sans-serif;
+  font-size: 85px;
+  font-weight: 400;
+  line-height: 125%;
+  color: var(--color-primary-1);
+}
+.counter__text {
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-primary-5);
+}
+
+.blog {
+  margin-block: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog__heading {
+  max-width: 800px;
+  text-align: center;
+}
+.blog__title {
+  font-family: "DM", sans-serif;
+  font-size: 50px;
+  line-height: 125%;
+  color: var(--color-primary-2);
+}
+.blog__subtitle {
+  margin-block: 12px 52px;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-primary-5);
+}
+.blog__article-chips {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 27px;
+}
+.blog__article {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 21px;
+  border: 1px solid #e7e7e7;
+  border-radius: 62px;
+  transition: background-color 200ms linear;
+}
+.blog__article:hover {
+  background-color: var(--color-primary-3);
+}
+.blog__article:hover .blog__atricle-btn {
+  background-color: var(--color-primary-4);
+  border: var(--color-primary-4);
+}
+.blog__image-container {
+  border-radius: 44px 44px 0px 0px;
+  overflow: hidden;
+  position: relative;
+  width: 340px;
+  height: 290px;
+}
+.blog__image-container img {
+  width: 100%;
+  height: 100%;
+}
+.blog__article-tag {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-primary-5);
+  border-radius: 8px 8px 8px 0;
+  background-color: #ffffff;
+  padding: 4px 8px;
+}
+.blog__atricle-title {
+  margin-block: 21px 30px;
+  font-family: "DM", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 125%;
+  color: var(--color-primary-2);
+}
+.blog__bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog__atricle-date {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-primary-5);
+}
+.blog__atricle-btn {
+  cursor: pointer;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: var(--color-primary-3);
+  background-color: var(--color-primary-3);
+  transition: background-color 200ms linear, border 200ms linear;
+}
+.blog__atricle-btn svg {
+  color: var(--color-primary-2);
+  transition: color 200ms linear;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 118px;
+}
+.footer__block {
+  display: flex;
+  flex-direction: column;
+}
+.footer__title {
+  font-family: "DM", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 125%;
+  color: var(--color-primary-5);
+}
+.footer__text {
+  margin-top: 25px;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-primary-5);
+}
+.footer__socials {
+  margin-top: 31px;
+  display: flex;
+  gap: 64px;
+}
 
 :root {
   --color-primary-1: #CDA274;
@@ -194,6 +369,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 .container {

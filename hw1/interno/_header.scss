@@ -8,15 +8,6 @@
 
     margin-top: 44px;
 
-    &__logo {
-        cursor: pointer;
-
-        transition: transform 200ms linear;
-        &:hover {
-            transform: scale(1.1);
-        }
-    }
-
     &__menu-bar {
         @include mixins.Jost-Regular-20;
         color: var(--color-primary-2);

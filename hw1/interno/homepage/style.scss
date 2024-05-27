@@ -1,7 +1,11 @@
 @use '../mixins';
+@use '../logo';
 @use '../header';
 @use '../banner';
 @use '../project';
+@use '../counter';
+@use '../blog';
+@use '../footer';
 
 @use '../fonts';
 
@@ -19,6 +23,7 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 .container {
