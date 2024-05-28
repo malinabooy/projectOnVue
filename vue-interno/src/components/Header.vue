@@ -1,5 +1,21 @@
-@use 'mixins';
-@use 'fonts';
+<script setup>
+import Logo from '@/components/Logo.vue'
+</script>
+
+<template>
+    <header class="header container">
+        <Logo />
+        <div class="header__menu-bar">
+            <router-link to="/home">Home</router-link>
+            <a href="#" class="header__link">Project</a>
+            <router-link to="/blog">Blog</router-link>
+        </div>
+    </header>
+</template>
+
+<style lang="scss">
+@use '../assets/mixins.scss';
+@use '../assets/fonts.scss';
 
 .header {
     display: flex;
@@ -21,8 +37,10 @@
 
         color: var(--color-primary-2);
         transition: color 200ms linear;
+
         &:hover {
             color: var(--color-primary-1);
         }
     }
 }
+</style>
