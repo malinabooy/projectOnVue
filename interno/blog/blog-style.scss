@@ -7,3 +7,10 @@
 @use '../footer';
 
 @use '../fonts';
+
+.page-blog {
+    align-items: start;
+}
+.page-blog__title {
+    margin-bottom: 30px;
+}

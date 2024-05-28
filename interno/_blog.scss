@@ -27,6 +27,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 27px;
+        row-gap: 30px;
     }
 
     &__article {
@@ -41,7 +42,7 @@
         &:hover {
             background-color: var(--color-primary-3);
         }
-        &:hover .blog__atricle-btn {
+        &:hover .blog__article-btn {
             background-color: var(--color-primary-4);
             border: var(--color-primary-4);
         }
@@ -75,7 +76,7 @@
         padding: 4px 8px;
     }
 
-    &__atricle-title {
+    &__article-title {
         margin-block: 21px 30px;
         @include mixins.DM-Regular-25;
         color: var(--color-primary-2);
@@ -87,12 +88,12 @@
         align-items: center;
     }
 
-    &__atricle-date {
+    &__article-date {
         @include mixins.Jost-Regular-16;
         color: var(--color-primary-5);
     }
 
-    &__atricle-btn {
+    &__article-btn {
         cursor: pointer;
 
         width: 52px;
@@ -108,7 +109,7 @@
         transition: background-color 200ms linear, border 200ms linear;
     }
 
-    &__atricle-btn svg {
+    &__article-btn svg {
         color: var(--color-primary-2);
         transition: color 200ms linear;
     }
