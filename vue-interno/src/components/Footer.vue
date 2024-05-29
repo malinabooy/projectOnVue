@@ -46,6 +46,7 @@ import Logo from '@/components/Logo.vue'
     justify-content: space-between;
 
     margin-bottom: 118px;
+    margin-top: 96px;
 
     &__block {
         display: flex;

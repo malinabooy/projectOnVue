@@ -26,6 +26,7 @@
 @use '../assets/fonts.scss';
 
 .counter {
+    margin-block: 96px;
     background-color: var(--color-primary-3);
 
     &__blocks {

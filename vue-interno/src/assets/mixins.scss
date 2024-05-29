@@ -51,3 +51,10 @@
     font-weight: 400;
     line-height: 150%;
 }
+
+@mixin Jost-Bold-16{
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 150%;
+}

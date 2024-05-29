@@ -104,8 +104,6 @@
     flex-direction: column;
     align-items: center;
 
-    margin-bottom: 96px;
-
     &__heading {
         max-width: 737px;
         text-align: center;
