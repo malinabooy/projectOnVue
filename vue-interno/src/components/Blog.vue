@@ -59,7 +59,7 @@ const articles = allArticles.slice(0, props.articlesCount);
 </script>
 
 <template>
-    <section :class="['blog', modifier, 'container', {'blog__mb-200' : modifier === 'blog--modifier-class'}]">
+    <section :class="['blog', modifier, 'container', {'blog__align-center': modifier !== 'blog--modifier-class', 'blog__mb-200' : modifier === 'blog--modifier-class'}]">
         <div class="blog__heading"
             :class="{ 'blog__text-center': modifier !== 'blog--modifier-class', 'blog__text-start': modifier === 'blog--modifier-class' }">
             <div class="blog__title">
@@ -90,7 +90,7 @@ const articles = allArticles.slice(0, props.articlesCount);
                 </div>
             </a>
         </article>
-        <div class="blog__pagination">
+        <div class="blog__pagination" v-if="modifier === 'blog--modifier-class'">
             <button class="blog__pagination-btn  blog__prev-btn">
                 <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.44286 1L1.5 7.68571L7.44286 14.3714" stroke="currentColor" stroke-width="2"
@@ -119,6 +119,9 @@ const articles = allArticles.slice(0, props.articlesCount);
     flex-direction: column;
     &__mb-200{
         margin-bottom: 200px;
+    }
+    &__align-center{
+        align-items: center;
     }
 
     &__heading {
