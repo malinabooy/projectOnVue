@@ -24,6 +24,12 @@
     font-weight: 400;
     line-height: 125%;
 }
+@mixin DM-Regular-20{
+    font-family: "DM", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 125%;
+}
 
 @mixin Jost-Regular-22{
     font-family: "Jost", sans-serif;

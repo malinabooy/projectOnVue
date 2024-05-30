@@ -16,7 +16,7 @@ const routes = [
     name: 'BlogPage',
     component: BlogPage
   },
-  {
+  { 
     path: '/productlist',
     name: 'ProductList',
     component: HwProductList

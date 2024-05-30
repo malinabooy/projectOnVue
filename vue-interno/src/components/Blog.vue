@@ -59,7 +59,8 @@ const articles = allArticles.slice(0, props.articlesCount);
 </script>
 
 <template>
-    <section :class="['blog', modifier, 'container', {'blog__align-center': modifier !== 'blog--modifier-class', 'blog__mb-200' : modifier === 'blog--modifier-class'}]">
+    <section
+        :class="['blog', modifier, 'container', { 'blog__align-center': modifier !== 'blog--modifier-class', 'blog__mb-200': modifier === 'blog--modifier-class' }]">
         <div class="blog__heading"
             :class="{ 'blog__text-center': modifier !== 'blog--modifier-class', 'blog__text-start': modifier === 'blog--modifier-class' }">
             <div class="blog__title">
@@ -81,12 +82,15 @@ const articles = allArticles.slice(0, props.articlesCount);
                 </div>
                 <div class="blog__bottom-content">
                     <div class="blog__article-date">{{ article.date }}</div>
-                    <button class="blog__article-btn">
-                        <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 19L9 10L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </button>
+                    <router-link to="/blog-details">
+                        <button class="blog__article-btn">
+                            <svg width="10" height="20" viewBox="0 0 10 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 19L9 10L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </router-link>
                 </div>
             </a>
         </article>
@@ -117,10 +121,12 @@ const articles = allArticles.slice(0, props.articlesCount);
 .blog {
     display: flex;
     flex-direction: column;
-    &__mb-200{
+
+    &__mb-200 {
         margin-bottom: 200px;
     }
-    &__align-center{
+
+    &__align-center {
         align-items: center;
     }
 

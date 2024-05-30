@@ -15,12 +15,15 @@
 
                 <div class="latest-post__bottom-info">
                     <p class="latest-post__date">26 December,2022</p>
-                    <button class="latest-post__btn-info">
-                        <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.77101 15.1855L7.71387 8.49983L1.77101 1.81412" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
+                    <router-link to="/blog-details">
+                        <button class="latest-post__btn-info">
+                            <svg width="9" height="17" viewBox="0 0 9 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.77101 15.1855L7.71387 8.49983L1.77101 1.81412" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </router-link>
                 </div>
             </article>
         </div>
@@ -33,6 +36,7 @@
 
 .latest-post {
     margin-bottom: 150px;
+
     &__title {
         @include mixins.DM-Regular-50;
         color: var(--color-primary-2);
