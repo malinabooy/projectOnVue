@@ -1,3 +1,65 @@
+<template>
+    <article class="article container" v-if="filteredBlog">
+        <div class="article__block">
+            <p class="article__title">{{ filteredBlog.title }}</p>
+            <img class="article__main-image" :src="'./src/' + filteredBlog.imgSrc" :alt="filteredBlog.title">
+            <div class="article__date-tag">
+                <p class="article__date">{{ filteredBlog.date }}</p>
+                <p class="article__tag">{{ filteredBlog.tag }}</p>
+            </div>
+            <p class="article__text">
+                Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular
+                belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration in some form, by injecthumour, or randomised words which don't look even slightly believable.
+                <br><br>Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend
+                to repeat predefined chunks as necessary.
+            </p>
+            <div class="article__quotes">
+                <img src="@/components/images/Quotes.jpg" alt="">
+            </div>
+            <p class="article__title">{{ filteredBlog.secondTitle }}</p>
+            <p class="article__text">
+                Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular
+                belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
+            </p>
+            <ul>
+                <li>
+                    <p class="article__text article__list">Contrary to popular belief.There are many variations of
+                        passages of Lorem Ipsum available, but the
+                        majority have suffered.</p>
+                </li>
+                <li>
+                    <p class="article__text article__list">Contrary to popular belief.There are many variations of
+                        passages of Lorem Ipsum available, but the
+                        majority have suffered.</p>
+                </li>
+                <li>
+                    <p class="article__text article__list">Contrary to popular belief.There are many variations of
+                        passages of Lorem Ipsum available, but the
+                        majority have suffered.</p>
+                </li>
+            </ul>
+            <img class="article__second-image" :src="'./src/' + filteredBlog.secondImgSrc"
+                :alt="filteredBlog.secondTitle">
+            <p class="article__text">
+                Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular
+                belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
+            </p>
+        </div>
+        <div class="article__sidebar">
+            <p class="article__sidebar-title">
+                Tags
+            </p>
+            <div class="article__tags-block">
+                <p class="article__sidebar-tag" v-for="tag in tags" :key="tag" @click="selectTag(tag)"
+                    :class="{ 'selected': tag === selectedTag }">
+                    {{ tag }}
+                </p>
+            </div>
+        </div>
+    </article>
+</template>
+
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 
@@ -37,72 +99,6 @@ const selectTag = (tag: string) => {
     selectedTag.value = tag;
 };
 </script>
-
-<template>
-    <article class="article container" v-if="filteredBlog">
-        <div class="article__block">
-            <p class="article__title">{{ filteredBlog.title }}</p>
-            <img class="article__main-image" :src="'./src/' + filteredBlog.imgSrc" :alt="filteredBlog.title">
-            <div class="article__date-tag">
-                <p class="article__date">{{ filteredBlog.date }}</p>
-                <p class="article__tag">{{ filteredBlog.tag }}</p>
-            </div>
-            <div class="article__text">
-                Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular
-                belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                alteration in some form, by injecthumour, or randomised words which don't look even slightly believable.
-                <br><br>Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend
-                to repeat predefined chunks as necessary.
-            </div>
-            <div class="article__quotes">
-                <img src="@/components/images/Quotes.jpg" alt="">
-            </div>
-            <p class="article__title">{{ filteredBlog.secondTitle }}</p>
-            <p class="article__text">
-                Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular
-                belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
-            </p>
-            <ul>
-                <li>
-                    <p class="article__text article__list">Contrary to popular belief.There are many variations of
-                        passages of Lorem Ipsum available, but the
-                        majority have suffered.</p>
-                </li>
-                <li>
-                    <p class="article__text article__list">Contrary to popular belief.There are many variations of
-                        passages of Lorem Ipsum available, but the
-                        majority have suffered.</p>
-                </li>
-                <li>
-                    <p class="article__text article__list">Contrary to popular belief.There are many variations of
-                        passages of Lorem Ipsum available, but the
-                        majority have suffered.</p>
-                </li>
-            </ul>
-            <img class="article__second-image" :src="'./src/' + filteredBlog.secondImgSrc" :alt="filteredBlog.secondTitle">
-            <p class="article__text">
-                Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular
-                belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
-            </p>
-        </div>
-        <div class="article__sidebar">
-            <p class="article__sidebar-title">
-                Tags
-            </p>
-            <div class="article__tags-block">
-                <p
-                    class="article__sidebar-tag"
-                    v-for="tag in tags"
-                    :key="tag"
-                    @click="selectTag(tag)"
-                    :class="{ 'selected': tag === selectedTag }"
-                >
-                    {{ tag }}
-                </p>
-            </div>
-        </div>
-    </article>
-</template>
 
 <style lang="scss">
 @use '../assets/mixins.scss';

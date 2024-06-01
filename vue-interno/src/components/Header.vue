@@ -1,7 +1,3 @@
-<script setup>
-import Logo from '@/components/Logo.vue'
-</script>
-
 <template>
     <header class="header container">
         <Logo />
@@ -12,7 +8,9 @@ import Logo from '@/components/Logo.vue'
         </div>
     </header>
 </template>
-
+<script setup>
+import Logo from '@/components/Logo.vue'
+</script>
 <style lang="scss">
 @use '../assets/mixins.scss';
 @use '../assets/fonts.scss';

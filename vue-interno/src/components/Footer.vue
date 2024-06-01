@@ -1,11 +1,7 @@
-<script setup>
-import Logo from '@/components/Logo.vue'
-</script>
-
 <template>
     <footer class="footer container">
         <div class="footer__block">
-            <Logo/>
+            <Logo />
             <p class="footer__text">
                 It is a long established fact that a reader <br>will be distracted lookings.
             </p>
@@ -22,9 +18,9 @@ import Logo from '@/components/Logo.vue'
             <div class="footer__title">
                 Pages
             </div>
-            <a href="#" class="footer__link footer__text">Home</a>
-            <a href="#" class="footer__link footer__text">Project</a>
-            <a href="#" class="footer__link footer__text">Blog</a>
+            <router-link to="/home" class="footer__link footer__text">Home</router-link>
+            <router-link to="/project" class="footer__link footer__text">Project</router-link>
+            <router-link to="/blog" class="footer__link footer__text">Blog</router-link>
         </div>
         <div class="footer__block">
             <div class="footer__title">
@@ -36,6 +32,10 @@ import Logo from '@/components/Logo.vue'
         </div>
     </footer>
 </template>
+
+<script setup>
+import Logo from '@/components/Logo.vue'
+</script>
 
 <style lang="scss">
 @use '../assets/mixins.scss';
@@ -51,6 +51,16 @@ import Logo from '@/components/Logo.vue'
     &__block {
         display: flex;
         flex-direction: column;
+    }
+
+    &__link {
+        text-decoration: none;
+        cursor: pointer;
+
+        transition: color 200ms linear;
+        &:hover {
+            color: var(--color-primary-1);
+        }
     }
 
     &__title {

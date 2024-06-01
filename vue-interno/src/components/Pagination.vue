@@ -18,9 +18,9 @@
   
   <script setup lang="ts">
   const props = defineProps<{
-    currentPage?: number;
+    currentPage: number;
     totalPages: number;
-    isModifierActive: boolean;
+    isModifierActive?: boolean;
   }>();
   
   const emit = defineEmits<{

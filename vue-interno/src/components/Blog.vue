@@ -1,3 +1,42 @@
+<template>
+    <section
+        :class="['blog', modifier, 'container', { 'blog__align-center': modifier !== 'blog--modifier-class', 'blog__mb-200': modifier === 'blog--modifier-class' }]">
+        <div class="blog__heading"
+            :class="{ 'blog__text-center': modifier !== 'blog--modifier-class', 'blog__text-start': modifier === 'blog--modifier-class' }">
+            <div class="blog__title">
+                Articles & News
+            </div>
+            <p class="blog__subtitle" v-if="modifier !== 'blog--modifier-class'">
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout and the points of using it.
+            </p>
+        </div>
+        <article class="blog__article-chips">
+            <a v-for="article in articles" :key="article.id" :href="article.link" class="blog__article">
+                <div class="blog__image-container">
+                    <img :src="'./src/' + article.imgSrc" :alt="article.title">
+                    <p class="blog__article-tag">{{ article.tag }}</p>
+                </div>
+                <div class="blog__article-title">
+                    {{ article.title }}
+                </div>
+                <div class="blog__bottom-content">
+                    <div class="blog__article-date">{{ article.date }}</div>
+                    <router-link to="/blog-details">
+                        <button class="blog__article-btn">
+                            <svg width="10" height="20" viewBox="0 0 10 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 19L9 10L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </router-link>
+                </div>
+            </a>
+        </article>
+        <Pagination :currentPage="1" :totalPages="3" :isModifierActive="false" />
+    </section>
+</template>
 <script setup lang="ts">
 import Pagination from '@/components/Pagination.vue'
 
@@ -59,47 +98,6 @@ const allArticles = [
 
 const articles = allArticles.slice(0, props.articlesCount);
 </script>
-
-<template>
-    <section
-        :class="['blog', modifier, 'container', { 'blog__align-center': modifier !== 'blog--modifier-class', 'blog__mb-200': modifier === 'blog--modifier-class' }]">
-        <div class="blog__heading"
-            :class="{ 'blog__text-center': modifier !== 'blog--modifier-class', 'blog__text-start': modifier === 'blog--modifier-class' }">
-            <div class="blog__title">
-                Articles & News
-            </div>
-            <p class="blog__subtitle" v-if="modifier !== 'blog--modifier-class'">
-                It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout and the points of using it.
-            </p>
-        </div>
-        <article class="blog__article-chips">
-            <a v-for="article in articles" :key="article.id" :href="article.link" class="blog__article">
-                <div class="blog__image-container">
-                    <img :src="'./src/' + article.imgSrc" :alt="article.title">
-                    <p class="blog__article-tag">{{ article.tag }}</p>
-                </div>
-                <div class="blog__article-title">
-                    {{ article.title }}
-                </div>
-                <div class="blog__bottom-content">
-                    <div class="blog__article-date">{{ article.date }}</div>
-                    <router-link to="/blog-details">
-                        <button class="blog__article-btn">
-                            <svg width="10" height="20" viewBox="0 0 10 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 19L9 10L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </router-link>
-                </div>
-            </a>
-        </article>
-        <Pagination :currentPage="1" :totalPages="3" :isModifierActive="false" />
-    </section>
-</template>
-
 <style lang="scss">
 @use '../assets/mixins.scss';
 @use '../assets/fonts.scss';

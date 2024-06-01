@@ -1,3 +1,10 @@
+@mixin DM-Regular-250{
+    font-family: "DM", sans-serif;
+    font-size: 250px;
+    font-weight: 400;
+    line-height: 125%;
+}
+
 @mixin DM-Regular-85{
     font-family: "DM", sans-serif;
     font-size: 85px;
@@ -17,7 +24,12 @@
     font-size: 50px;
     line-height: 125%;
 }
-
+@mixin DM-Regular-35{
+    font-family: "DM", sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 150%;
+}
 @mixin DM-Regular-25{
     font-family: "DM", sans-serif;
     font-size: 25px;

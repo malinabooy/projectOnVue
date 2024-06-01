@@ -1,14 +1,3 @@
-<script setup lang="ts">
-import { defineProps } from 'vue'
-
-const props = defineProps<{
-    showIntro: boolean;
-    introTitle?: string;
-    introSubtitle?: string;
-    imageUrl: string;
-}>();
-</script>
-
 <template>
     <div class="banner-mod">
         <div class="banner-mod__image-box">
@@ -24,7 +13,16 @@ const props = defineProps<{
         </div>
     </div>
 </template>
+<script setup lang="ts">
+import { defineProps } from 'vue'
 
+const props = defineProps<{
+    showIntro: boolean;
+    introTitle?: string;
+    introSubtitle?: string;
+    imageUrl: string;
+}>();
+</script>
 <style lang="scss">
 @use '../assets/mixins.scss';
 @use '../assets/fonts.scss';

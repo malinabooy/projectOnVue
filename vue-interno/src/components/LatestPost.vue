@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
     <section class="latest-post container">
         <p class="latest-post__title">Latest Post</p>

@@ -1,25 +1,24 @@
 <template>
     <section class="counter">
         <div class="counter__blocks container">
-            <div class="counter__block">
-                <div class="counter__number">12</div>
-                <div class="counter__text">Years Of Experiance</div>
-            </div>
-            <div class="counter__block">
-                <div class="counter__number">85</div>
-                <div class="counter__text">Success Project</div>
-            </div>
-            <div class="counter__block">
-                <div class="counter__number">15</div>
-                <div class="counter__text">Active Project</div>
-            </div>
-            <div class="counter__block">
-                <div class="counter__number">95</div>
-                <div class="counter__text">Happy Customers</div>
+            <div class="counter__block" v-for="(item, index) in counterData" :key="index">
+                <div class="counter__number">{{ item.number }}</div>
+                <div class="counter__text">{{ item.text }}</div>
             </div>
         </div>
     </section>
 </template>
+
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const counterData = ref([
+  { number: 12, text: 'Years Of Experience' },
+  { number: 85, text: 'Success Projects' },
+  { number: 15, text: 'Active Projects' },
+  { number: 95, text: 'Happy Customers' }
+])
+</script>
 
 <style lang="scss">
 @use '../assets/mixins.scss';

@@ -35,6 +35,8 @@
     }
 
     &__item {
+      cursor: pointer;
+
         @include mixins.Jost-Regular-18;
         color: var(--color-primary-2);
         padding: 26px 68px;
