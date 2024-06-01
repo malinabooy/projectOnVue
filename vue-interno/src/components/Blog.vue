@@ -96,7 +96,7 @@ const articles = allArticles.slice(0, props.articlesCount);
                 </div>
             </a>
         </article>
-        <Pagination :currentPage="1" :totalPages="3" />
+        <Pagination :currentPage="1" :totalPages="3" :isModifierActive="false" />
     </section>
 </template>
 

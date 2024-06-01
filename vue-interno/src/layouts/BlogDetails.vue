@@ -7,8 +7,7 @@ import Article from '@/components/Article.vue'
 
 <template>
     <Header />
-    <BannerMod :showIntro="false" introTitle="Articles & News" introSubtitle="Home / Blog"
-        imageUrl="components/images/BannerDetails.jpg" />
+    <BannerMod :showIntro="false" imageUrl="components/images/BannerDetails.jpg" />
     <Article />
     <Footer />
 </template>

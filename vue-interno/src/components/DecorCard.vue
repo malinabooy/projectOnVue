@@ -6,7 +6,7 @@
           <div class="decor-card__name">{{ card.name }}</div>
           <div class="decor-card__place">{{ card.place }}</div>
         </div>
-        <router-link to="/project">
+        <router-link to="/project-details">
           <button class="decor-card__btn">
             <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 19L9 10L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"

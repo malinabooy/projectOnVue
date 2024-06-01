@@ -3,8 +3,8 @@ import { defineProps } from 'vue'
 
 const props = defineProps<{
     showIntro: boolean;
-    introTitle: string;
-    introSubtitle: string;
+    introTitle?: string;
+    introSubtitle?: string;
     imageUrl: string;
 }>();
 </script>

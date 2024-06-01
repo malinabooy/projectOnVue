@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import Header from '@/components/Header.vue'
-import Blog from '@/components/Blog.vue'
-import Footer from '@/components/Footer.vue'
 import BannerMod from '@/components/BannerMod.vue'
 import LatestPost from '@/components/LatestPost.vue'
+import Blog from '@/components/Blog.vue'
+import Footer from '@/components/Footer.vue'
 </script>
 
 <template>
