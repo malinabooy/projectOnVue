@@ -19,10 +19,10 @@
 import DecorCard from '@/components/DecorCard.vue';
 
 const cardsData1 = [
-  { imageSrc: './src/components/images/decor1.jpg', name: 'Modern Kitchen', place: 'Decor / Architecture' },
-  { imageSrc: './src/components/images/decor2.jpg', name: 'Modern Kitchen', place: 'Decor / Architecture' },
-  { imageSrc: './src/components/images/decor3.jpg', name: 'Modern Kitchen', place: 'Decor / Architecture' },
-  { imageSrc: './src/components/images/decor4.jpg', name: 'Modern Kitchen', place: 'Decor / Architecture' },
+  { imageSrc: './src/assets/images/decor1.jpg', name: 'Modern Kitchen', place: 'Decor / Architecture' },
+  { imageSrc: './src/assets/images/decor2.jpg', name: 'Modern Kitchen', place: 'Decor / Architecture' },
+  { imageSrc: './src/assets/images/decor3.jpg', name: 'Modern Kitchen', place: 'Decor / Architecture' },
+  { imageSrc: './src/assets/images/decor4.jpg', name: 'Modern Kitchen', place: 'Decor / Architecture' },
 ];
 
 const props = defineProps({

@@ -1,6 +1,6 @@
 <template>
     <router-link to="/home" class="header__logo logo">
-        <img src="/src/components/icons/Logo.svg" alt="">
+        <img src="/src/assets/icons/Logo.svg" alt="">
     </router-link>
 </template>
 

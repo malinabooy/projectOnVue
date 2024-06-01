@@ -15,7 +15,7 @@
                 to repeat predefined chunks as necessary.
             </p>
             <div class="article__quotes">
-                <img src="@/components/images/Quotes.jpg" alt="">
+                <img src="@/assets/images/Quotes.jpg" alt="">
             </div>
             <p class="article__title">{{ filteredBlog.secondTitle }}</p>
             <p class="article__text">
@@ -66,21 +66,21 @@ import { ref, computed } from 'vue';
 const allBlogs = ref([
     {
         id: 1,
-        imgSrc: "components/images/articleImg.jpg",
+        imgSrc: "assets/images/articleImg.jpg",
         title: "Let's Get Solution for Building Construction Work",
         date: "26 December,2022",
         tag: "Interior / Home / Decore",
         secondTitle: "Design sprints are great",
-        secondImgSrc: "components/images/articleSecondImg.jpg"
+        secondImgSrc: "assets/images/articleSecondImg.jpg"
     },
     {
         id: 2,
-        imgSrc: "components/images/articleSecondImg.jpg",
+        imgSrc: "assets/images/articleSecondImg.jpg",
         title: "Another Blog Post",
         date: "15 January,2023",
         tag: "Kitchen",
         secondTitle: "Another great design",
-        secondImgSrc: "components/images/articleImg.jpg"
+        secondImgSrc: "assets/images/articleImg.jpg"
     }
 ]);
 

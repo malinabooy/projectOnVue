@@ -1,6 +1,6 @@
 <template>
     <Header />
-    <BannerMod :showIntro="false" imageUrl="components/images/BannerDetails.jpg" />
+    <BannerMod :showIntro="false" imageUrl="assets/images/BannerDetails.jpg" />
     <Article />
     <Footer />
 </template>

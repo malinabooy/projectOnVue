@@ -10,7 +10,7 @@
           <div class="image-container">
             <img :src="image" :alt="'Project content Image ' + (index + 1)" />
             <div class="project-content__zoom-icon">
-              <img src="@/components/icons/Zoom.svg" alt="Zoom Icon">
+              <img src="@/assets/icons/Zoom.svg" alt="Zoom Icon">
             </div>
           </div>
         </div>

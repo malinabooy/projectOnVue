@@ -14,7 +14,7 @@
             </router-link>
         </div>
         <div class="not-found-page__image">
-            <img src="@/components/images/notFound.jpg" alt="not found">
+            <img src="@/assets/images/notFound.jpg" alt="not found">
         </div>
     </div>
 </template>

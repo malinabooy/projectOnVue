@@ -48,7 +48,7 @@ const props = defineProps<{
 const allArticles = [
     {
         id: 1,
-        imgSrc: "components/images/blog1.jpg",
+        imgSrc: "assets/images/blog1.jpg",
         tag: "Kitchen Design",
         title: "Let's Get Solution For Building Construction Work",
         date: "26 December,2022",
@@ -56,7 +56,7 @@ const allArticles = [
     },
     {
         id: 2,
-        imgSrc: "components/images/blog2.jpg",
+        imgSrc: "assets/images/blog2.jpg",
         tag: "Living Design",
         title: "Low Cost Latest Invented Interior Designing Ideas.",
         date: "22 December,2022",
@@ -64,7 +64,7 @@ const allArticles = [
     },
     {
         id: 3,
-        imgSrc: "components/images/blog3.jpg",
+        imgSrc: "assets/images/blog3.jpg",
         tag: "Interior Design",
         title: "Best For Any Office & Business Interior Solution",
         date: "25 December,2022",
@@ -72,7 +72,7 @@ const allArticles = [
     },
     {
         id: 4,
-        imgSrc: "components/images/blog4.jpg",
+        imgSrc: "assets/images/blog4.jpg",
         tag: "Kitchen Design",
         title: "Let's Get Solution For Building Construction Work",
         date: "26 December,2022",
@@ -80,7 +80,7 @@ const allArticles = [
     },
     {
         id: 5,
-        imgSrc: "components/images/blog5.jpg",
+        imgSrc: "assets/images/blog5.jpg",
         tag: "Living Design",
         title: "Low Cost Latest Invented Interior Designing Ideas.",
         date: "22 December,2022",
@@ -88,7 +88,7 @@ const allArticles = [
     },
     {
         id: 6,
-        imgSrc: "components/images/blog6.jpg",
+        imgSrc: "assets/images/blog6.jpg",
         tag: "Interior Design",
         title: "Best For Any Office & Business Interior Solution",
         date: "25 December,2022",

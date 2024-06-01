@@ -4,7 +4,7 @@
         :showIntro="true" 
         introTitle="Articles & News" 
         introSubtitle="Home / Blog"
-        imageUrl="components/images/BannerBlog.jpg" />
+        imageUrl="assets/images/BannerBlog.jpg" />
     <LatestPost />
     <Blog modifier="blog--modifier-class" :articlesCount="6" />
     <Footer />

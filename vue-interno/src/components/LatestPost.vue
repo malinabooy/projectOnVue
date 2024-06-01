@@ -2,7 +2,7 @@
     <section class="latest-post container">
         <p class="latest-post__title">Latest Post</p>
         <div class="latest-post__box">
-            <img src="@/components/images/post.jpg" alt="">
+            <img src="@/assets/images/post.jpg" alt="">
             <article class="latest-post__info">
                 <p class="latest-post__title-info">Low Cost Latest Invented Interior Designing Ideas</p>
                 <p class="latest-post__text-info">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis

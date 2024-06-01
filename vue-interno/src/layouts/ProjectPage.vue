@@ -1,7 +1,7 @@
 <template>
   <Header />
   <BannerMod :showIntro="true" introTitle="Our Project" introSubtitle="Home / Project"
-             imageUrl="components/images/ProjectImg.jpg"/>
+             imageUrl="assets/images/ProjectImg.jpg"/>
   <Categories @filter-category="handleFilter"/>
   <div class="project-page__cards-block container">
     <DecorCard :cards="filteredCards" customClass="project-page__decor-card"/>
@@ -20,14 +20,14 @@ import Pagination from '@/components/Pagination.vue';
 import Footer from '@/components/Footer.vue';
 
 const cardsData2 = [
-  { imageSrc: './src/components/images/project1.jpg', name: 'Living Area', place: 'Decor / Architecture' },
-  { imageSrc: './src/components/images/project3.jpg', name: 'Classic Minimal Bedroom', place: 'Decor / Architecture' },
-  { imageSrc: './src/components/images/project5.jpg', name: 'Minimal Bedroom Table', place: 'Decor / Architecture' },
-  { imageSrc: './src/components/images/project7.jpg', name: 'Modern Bathroom', place: 'Decor / Architecture' },
-  { imageSrc: './src/components/images/project2.jpg', name: 'Minimal Bedroom', place: 'Decor / Architecture' },
-  { imageSrc: './src/components/images/project4.jpg', name: 'Modern Bathroom', place: 'Decor / Architecture' },
-  { imageSrc: './src/components/images/project6.jpg', name: 'Minimal Kitchen', place: 'Decor / Architecture' },
-  { imageSrc: './src/components/images/project8.jpg', name: 'Modern Bathroom', place: 'Decor / Architecture' },
+  { imageSrc: './src/assets/images/project1.jpg', name: 'Living Area', place: 'Decor / Architecture' },
+  { imageSrc: './src/assets/images/project3.jpg', name: 'Classic Minimal Bedroom', place: 'Decor / Architecture' },
+  { imageSrc: './src/assets/images/project5.jpg', name: 'Minimal Bedroom Table', place: 'Decor / Architecture' },
+  { imageSrc: './src/assets/images/project7.jpg', name: 'Modern Bathroom', place: 'Decor / Architecture' },
+  { imageSrc: './src/assets/images/project2.jpg', name: 'Minimal Bedroom', place: 'Decor / Architecture' },
+  { imageSrc: './src/assets/images/project4.jpg', name: 'Modern Bathroom', place: 'Decor / Architecture' },
+  { imageSrc: './src/assets/images/project6.jpg', name: 'Minimal Kitchen', place: 'Decor / Architecture' },
+  { imageSrc: './src/assets/images/project8.jpg', name: 'Modern Bathroom', place: 'Decor / Architecture' },
 ];
 
 const cardCount = 8;

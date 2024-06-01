@@ -1,7 +1,7 @@
 <template>
     <section class="banner container">
         <div class="banner__image-container">
-            <img src="/src/components/images/Banner.jpg" width="1200" height="758" alt="" />
+            <img src="/src/assets/images/Banner.jpg" width="1200" height="758" alt="" />
             <div class="banner__intro">
                 <div class="banner__subcontent">
                     <h1 class="banner__title">
