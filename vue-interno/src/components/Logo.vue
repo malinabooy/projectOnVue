@@ -1,7 +1,7 @@
 <template>
-    <a href="#" class="header__logo logo">
+    <router-link to="/home" class="header__logo logo">
         <img src="./icons/Logo.svg" alt="">
-    </a>
+    </router-link>
 </template>
 
 <style lang="scss">

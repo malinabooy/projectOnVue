@@ -10,7 +10,7 @@ import Footer from '@/components/Footer.vue'
 <template>
   <Header />
   <Banner />
-  <Project />
+  <Project :cardCount="4"/>
   <Counter />
   <Blog :articlesCount="3" />
   <Footer />

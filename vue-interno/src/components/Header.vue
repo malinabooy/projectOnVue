@@ -6,9 +6,9 @@ import Logo from '@/components/Logo.vue'
     <header class="header container">
         <Logo />
         <div class="header__menu-bar">
-            <router-link to="/home"><p class="header__link">Home</p></router-link>
-            <router-link to="/home"><p class="header__link">Project</p></router-link>
-            <router-link to="/blog"><p class="header__link">Blog</p></router-link>
+            <router-link to="/home" class="header__link">Home</router-link>
+            <router-link to="/project" class="header__link">Project</router-link>
+            <router-link to="/blog" class="header__link">Blog</router-link>
         </div>
     </header>
 </template>
